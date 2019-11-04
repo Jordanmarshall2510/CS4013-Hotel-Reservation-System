@@ -22,7 +22,7 @@ public class Room{
 		return quantity;
 	}
 
-	public int setQuantity(String aQuantity){
+	public int setQuantity(int aQuantity){
 		this.quantity = aQuantity;
 	}
 
@@ -30,7 +30,7 @@ public class Room{
 		return available;
 	}
 
-	public boolean setType(String isAvailable){
+	public boolean setType(boolean isAvailable){
 		this.available = isAvailable;
 	}
 
