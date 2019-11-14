@@ -12,9 +12,9 @@ public class Reservation {
 
     String reservationName; // Person making the reservation
 
-    char reservationType; // 'S' for Standard 'A' for Advanced
+    int reservationType; // '1' for Standard '0' for Advanced
 
-    LocalDateTime checkInDate; // date of booking start
+    String checkInDay; // date of booking start
 
     int numOfNights; // number of nights booked
 
@@ -39,13 +39,13 @@ public class Reservation {
      * @param totalCost
      * @param Deposit
      */
-    Reservation(int reservationNum, String reservationName, char reservationType,
-                LocalDateTime checkInDate, int numOfNights, int numOfRooms,
+    Reservation(int reservationNum, String reservationName, int reservationType,
+                String checkInDay, int numOfNights, int numOfRooms,
                 ArrayList<Room> roomsBooked, double totalCost, double Deposit)
     {
         this.reservationName = reservationName;
         this.reservationType = reservationType;
-        this.checkInDate = checkInDate;
+        this.checkInDay = checkInDay;
         this.numOfNights = numOfNights;
         this.numOfRooms = numOfRooms;
         this.roomsBooked = roomsBooked;
