@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * @author The bois
  */
 public class FiveStar extends Hotel {
-
+    
     /**
      * Number of each of these rooms that are available
      */
