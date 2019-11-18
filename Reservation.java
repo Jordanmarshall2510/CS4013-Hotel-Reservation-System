@@ -8,23 +8,23 @@ import java.util.ArrayList;
 public class Reservation {
 
 
-    int reservationNum; // Cannot be defined by the user must be automated !!
+    private int reservationNum; // Cannot be defined by the user must be automated !!
 
-    String reservationName; // Person making the reservation
+    private String reservationName; // Person making the reservation
 
-    int reservationType; // '1' for Standard '0' for Advanced
+    private int reservationType; // '1' for Standard '0' for Advanced
 
-    String checkInDay; // date of booking start
+    private String checkInDay; // date of booking start
 
-    int numOfNights; // number of nights booked
+    private int numOfNights; // number of nights booked
 
-    int numOfRooms; // number of rooms booked
+    private int numOfRooms; // number of rooms booked
 
-    ArrayList<Room> roomsBooked = new ArrayList<>(); // the rooms booked
+    private ArrayList<Room> roomsBooked = new ArrayList<>(); // the rooms booked
 
-    double totalCost; // total cost of the whole reservation
+    private double totalCost; // total cost of the whole reservation
 
-    double Deposit; // deposit of the whole reservation
+    private double Deposit; // deposit of the whole reservation
 
     /**
      * Yes this is big. Apparently thats okay
@@ -57,6 +57,11 @@ public class Reservation {
     {
 
     }
+    
+    public void addRoom(Room aRoom)
+    {
+        roomsBooked.add(aRoom);
+    }
 
 
 
@@ -75,4 +80,76 @@ public class Reservation {
 //        return some strings;
 //    }
 //
+
+    public int getReservationNum() {
+        return reservationNum;
+    }
+
+    public void setReservationNum(int reservationNum) {
+        this.reservationNum = reservationNum;
+    }
+
+    public String getReservationName() {
+        return reservationName;
+    }
+
+    public void setReservationName(String reservationName) {
+        this.reservationName = reservationName;
+    }
+
+    public int getReservationType() {
+        return reservationType;
+    }
+
+    public void setReservationType(int reservationType) {
+        this.reservationType = reservationType;
+    }
+
+    public String getCheckInDay() {
+        return checkInDay;
+    }
+
+    public void setCheckInDay(String checkInDay) {
+        this.checkInDay = checkInDay;
+    }
+
+    public int getNumOfNights() {
+        return numOfNights;
+    }
+
+    public void setNumOfNights(int numOfNights) {
+        this.numOfNights = numOfNights;
+    }
+
+    public int getNumOfRooms() {
+        return numOfRooms;
+    }
+
+    public void setNumOfRooms(int numOfRooms) {
+        this.numOfRooms = numOfRooms;
+    }
+
+    public ArrayList<Room> getRoomsBooked() {
+        return roomsBooked;
+    }
+
+    public void setRoomsBooked(ArrayList<Room> roomsBooked) {
+        this.roomsBooked = roomsBooked;
+    }
+
+    public double getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(double totalCost) {
+        this.totalCost = totalCost;
+    }
+
+    public double getDeposit() {
+        return Deposit;
+    }
+
+    public void setDeposit(double Deposit) {
+        this.Deposit = Deposit;
+    }
 }
