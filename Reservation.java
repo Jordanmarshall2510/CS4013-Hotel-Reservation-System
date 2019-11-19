@@ -7,6 +7,19 @@ import java.util.ArrayList;
  */
 public class Reservation {
 
+    @Override
+    public String toString() {
+        return "Reservation{"+ reservationNum +
+                ", Name = " + reservationName
+                + ", Reservation Type = " + reservationType
+                + ", checkInDate = " + checkInDay +
+                ", Number of Nights = " + numOfNights +
+                ", Number of Rooms" + numOfRooms +
+                ", Rooms Booked = " + roomsBooked.toString() +
+                ", totalCost = " + totalCost +
+                ", Deposit = " + Deposit + '}';
+    }
+
 
     private int reservationNum; // Cannot be defined by the user must be automated !!
 
@@ -26,19 +39,7 @@ public class Reservation {
 
     private double Deposit; // deposit of the whole reservation
 
-    /**
-     * Yes this is big. Apparently thats okay
-     *
-     * @param reservationNum
-     * @param reservationName
-     * @param reservationType
-     * @param checkInDate
-     * @param numOfNights
-     * @param numOfRooms
-     * @param roomsBooked
-     * @param totalCost
-     * @param Deposit
-     */
+ 
     Reservation(int reservationNum, String reservationName, int reservationType,
                 String checkInDay, int numOfNights, int numOfRooms,
                 ArrayList<Room> roomsBooked, double totalCost, double Deposit)
@@ -58,28 +59,16 @@ public class Reservation {
 
     }
     
+    
+    
+    
+    
+    
+    
     public void addRoom(Room aRoom)
     {
         roomsBooked.add(aRoom);
     }
-
-
-
-
-
-
-
-
-
-
-
-    //// to do later
-//    @Override
-//    public String toString()
-//    {
-//        return some strings;
-//    }
-//
 
     public int getReservationNum() {
         return reservationNum;
