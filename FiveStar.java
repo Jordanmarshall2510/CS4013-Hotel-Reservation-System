@@ -5,6 +5,11 @@ import java.util.ArrayList;
  * @author The bois
  */
 public class FiveStar extends Hotel {
+
+    @Override
+    public String toString() {
+        return "FiveStar";
+    }
     
     /**
      * Number of each of these rooms that are available
@@ -14,14 +19,7 @@ public class FiveStar extends Hotel {
     int numDeluxeSingle;
     int numDeluxeFamily;
 
-    /**
-     * @param numberOfRooms
-     * @param Rooms
-     * @param numDeluxeDouble
-     * @param numDeluxeTwin
-     * @param numDeluxeSingle
-     * @param numDeluxeFamily
-     */
+
     FiveStar(int numberOfRooms, ArrayList<Room> Rooms, int numDeluxeDouble,
              int numDeluxeTwin, int numDeluxeSingle, int numDeluxeFamily) {
         this.numberOfRooms = numberOfRooms; // from Hotel
@@ -38,19 +36,4 @@ public class FiveStar extends Hotel {
 
     }
 
-
-
-
-
-
-
-
-
-    //// to do later
-//    @Override
-//    public String toString()
-//    {
-//        return some strings;
-//    }
-//
 }
