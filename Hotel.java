@@ -1,6 +1,4 @@
 
-package Hotel_system;
-
 import java.util.ArrayList;
 
 /**
@@ -16,19 +14,5 @@ public abstract class Hotel {
     protected ArrayList<Room> Rooms = new ArrayList<>(); // Each hotel type uses its own
     
     
-    
-    
-    
-    
-    
-    
-    
-    //// to do later 
-//    @Override
-//    public String toString()
-//    {
-//        return some strings;
-//    }
-//    
-    
+ 
 }
