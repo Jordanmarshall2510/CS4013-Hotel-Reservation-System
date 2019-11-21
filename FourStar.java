@@ -1,16 +1,12 @@
 import java.util.ArrayList;
 
-/**
- *
- * @author The bois
- */
 public class FourStar extends Hotel {
 
     @Override
     public String toString() {
         return "FourStar";
     }
-    
+
     /**
      * Number of each of these rooms that are available
      */
@@ -36,5 +32,3 @@ public class FourStar extends Hotel {
     }
 
 }
-
-
