@@ -1,8 +1,3 @@
-
-/**
- *
- * @author The bois
- */
 public class Room {
 
     @Override
@@ -27,7 +22,7 @@ public class Room {
     int breakfast; // if breakfast is included True
     boolean booked; // true if this room is currently booked
 
-    
+
     Room(String Type, double Rate, int breakfast)
     {
         this.Type = Type;
@@ -42,7 +37,7 @@ public class Room {
 
     Room(String Type)
     {
-       this.Type = Type;
+        this.Type = Type;
     }
 
     Room(String Type, int breakfast)
@@ -50,5 +45,19 @@ public class Room {
         this.Type = Type;
         this.breakfast = breakfast;
     }
+
+
+    public static String[] roomsFiveStar = {new String("Deluxe Double Max Occupancy: 2 Adults"),
+            new String("Deluxe Twin Max Occupancy: 2 Adults 1 Child"),
+            new String("Deluxe Single Max Occupancy: 1 Adult 1 Child"),
+            new String("Deluxe Family Max Occupancy: 3 Adults 1 Child")};
+
+    public static String[] roomsFourStar = {new String("Executive Double Max Occupancy: 2 Adults"),
+            new String("Executive Twin Max Occupancy: 2 Adults 1 Child"),
+            new String("Executive Single Max Occupancy: 1 Adult 1 Child")};
+
+    public static String[] roomsThreeStar = {new String("Classic Double Max Occupancy: 2 Adults"),
+            new String("Classic Twin Max Occupancy: 2 Adults 1 Child"),
+            new String("Classic Single Max Occupancy: 1 Adult 1 Child")};
 
 }
