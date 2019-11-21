@@ -32,7 +32,13 @@ public class ReservationMenu {
         System.out.println("What day would you like to check in? (DD/MM/YYYY): ");
         String checkInDay = in.nextLine();
 
+
+
+        //This line is just testing the day of week
         System.out.println(Reservation.getDayOfWeek(Reservation.formatDate(checkInDay)));
+
+
+
 
         System.out.println("Number of Nights: ");
         int numOfNights = Integer.parseInt(in.nextLine());
