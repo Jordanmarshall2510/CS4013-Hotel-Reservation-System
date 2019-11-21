@@ -1,10 +1,10 @@
-import java.time.LocalDateTime;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.StringTokenizer;
 
-/**
- *
- * @author The bois
- */
 public class Reservation {
 
     @Override
@@ -18,6 +18,9 @@ public class Reservation {
                 ", Rooms Booked = " + roomsBooked.toString() +
                 ", totalCost = " + totalCost +
                 ", Deposit = " + Deposit + '}';
+    }
+    public String csvString() {
+        return reservationNum + "," + reservationName + "," + reservationType + "," + checkInDay + "," + numOfNights + "," + numOfRooms + "," + roomsBooked.toString() + "," + totalCost + ","  + Deposit;
     }
 
 
@@ -39,7 +42,7 @@ public class Reservation {
 
     private double Deposit; // deposit of the whole reservation
 
- 
+
     Reservation(int reservationNum, String reservationName, int reservationType,
                 String checkInDay, int numOfNights, int numOfRooms,
                 ArrayList<Room> roomsBooked, double totalCost, double Deposit)
@@ -58,13 +61,13 @@ public class Reservation {
     {
 
     }
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     public void addRoom(Room aRoom)
     {
         roomsBooked.add(aRoom);
@@ -140,5 +143,19 @@ public class Reservation {
 
     public void setDeposit(double Deposit) {
         this.Deposit = Deposit;
+    }
+
+    public static String getDayOfWeek(LocalDate aDate){
+        String day = aDate.getDayOfWeek().name();
+        return day;
+    }
+
+    public static LocalDate formatDate(String date){
+        StringTokenizer st = new StringTokenizer(date);
+        int day = Integer.parseInt(st.nextToken("/"));
+        int month = Integer.parseInt(st.nextToken("/"));
+        int year = Integer.parseInt(st.nextToken());
+        LocalDate calDate = LocalDate.of(year, month, day);
+        return calDate;
     }
 }
