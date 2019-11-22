@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class Reservation {
 
-    @Override
+    /*@Override
     public String toString() {
         return "Reservation{"+ reservationNum +
                 ", Name = " + reservationName
@@ -18,8 +18,9 @@ public class Reservation {
                 ", Rooms Booked = " + roomsBooked.toString() +
                 ", totalCost = " + totalCost +
                 ", Deposit = " + Deposit + '}';
-    }
-    public String csvString() {
+    }*/
+    @Override
+    public String toString() {
         return reservationNum + "," + reservationName + "," + reservationType + "," + checkInDay + "," + numOfNights + "," + numOfRooms + "," + roomsBooked.toString() + "," + totalCost + ","  + Deposit;
     }
 

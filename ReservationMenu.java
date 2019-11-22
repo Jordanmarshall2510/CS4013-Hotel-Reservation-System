@@ -86,6 +86,7 @@ public class ReservationMenu {
         {
             System.out.println(reservations.get(i));
         }
+
     }
 
     private void cancel()
@@ -324,6 +325,6 @@ public class ReservationMenu {
     }
 
 
-
+    csvWriter(reservations);
 
 }

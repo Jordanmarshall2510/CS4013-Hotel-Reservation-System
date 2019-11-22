@@ -41,8 +41,8 @@ public class CSV {
             csvWriter.append("Deposit");
             csvWriter.append("\n");
 
-            for(aReservation : ArrayList<Reservation>){
-                csvWriter.append(aReservation.csvString());
+            for(Reservation test :  aReservation){
+                csvWriter.append(test.toString());
                 csvWriter.append("\n");
             }
 
