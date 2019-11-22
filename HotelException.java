@@ -1,5 +1,4 @@
 
-package Hotel_system;
 
 /**
  *
